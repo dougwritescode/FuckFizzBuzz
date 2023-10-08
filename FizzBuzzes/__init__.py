@@ -1,1 +1,1 @@
-import OneLine
+from OneLine import OneLineFizzBuzz
