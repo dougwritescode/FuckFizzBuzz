@@ -1,2 +1,2 @@
-from OneLine import OneLineFizzBuzz
+from OneLine import OneLine
 from OneLineGeneral import OneLineGeneral
