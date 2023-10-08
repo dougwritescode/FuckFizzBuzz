@@ -2,7 +2,7 @@ import unittest
 from contextlib import redirect_stdout
 from io import StringIO
 
-from OneLineFizzBuzz import fizz_buzz_one_line
+from OneLine import fizz_buzz_one_line
 
 
 class FizzBuzzOneLineTest(unittest.TestCase):
