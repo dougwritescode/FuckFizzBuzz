@@ -30,7 +30,7 @@ class FizzBuzzObjectGeneral(object):
 if __name__ == "__main__":
     fbo = FizzBuzzObjectGeneral(
         d={3: 'Fizz', 5: 'Buzz'},
-        s=lambda a: a[1]
+        s=lambda a: a[0]
     )
     for n in fbo():
         print(n)
