@@ -8,4 +8,4 @@ Every time, it's always Fizz Buzz.
 
 No variety, no other problems or areas of development competency come up first -- not OOP, not different paradigms, not testing practices (maybe binary trees, but FizzBuzz usually comes first).
 
-With that in mind, maybe if I implement FizzBuzz on my own enough, and with sufficient variety, interviewers will stop asking to whiteboard this CS-100-level problem and actually try something novel during interviews.
+The only way I can think of to disincentivize resorting to FizzBuzz is to make such unwieldy FizzBuzzes and have them ready to hand when asked, so no one will want to see such convoluted answers to such a simple problem (and also not have their time wasted, like mine so oftern is with this problem).
