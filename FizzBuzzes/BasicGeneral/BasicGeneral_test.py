@@ -5,9 +5,9 @@ from io import StringIO
 from BasicGeneral import fizz_buzz_general
 
 
-class GeneralFizzBuzzOneLineTest(unittest.TestCase):
+class GeneralFizzBuzzBasicTest(unittest.TestCase):
 
-    def test_fb_one_line_general_base(self):
+    def test_fb_basic_general_base(self):
         output = StringIO()
         with redirect_stdout(output):
             fizz_buzz_general()
@@ -27,10 +27,10 @@ class GeneralFizzBuzzOneLineTest(unittest.TestCase):
             else:
                 self.assertFalse(num % 5 == 0 or num % 3 == 0)
 
-    def test_fb_one_line_general_custom(self):
+    def test_fb_basic_general_custom(self):
         output = StringIO()
         with redirect_stdout(output):
-            fizz_buzz_general(n=42, params={6:'Blarg', 7:'Honk'})
+            fizz_buzz_general(n=42, d={6:'Blarg', 7:'Honk'})
         received = output.getvalue()
         for line in filter(lambda a: a != '', received.split('\n')):
             splitline = line.strip().split(' ')
