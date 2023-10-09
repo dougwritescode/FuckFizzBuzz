@@ -5,12 +5,14 @@ from io import StringIO
 from Object import FizzBuzzObject
 
 
-class GeneralFizzBuzzOneLineTest(unittest.TestCase):
+class FizzBuzzObjectTest(unittest.TestCase):
 
-    def test_fb_one_line_general_base(self):
+    def test_fb_object_base(self):
         output = StringIO()
         with redirect_stdout(output):
-            FizzBuzzObject()
+            fbo = FizzBuzzObject()
+            for n in fbo():
+                print(n)
         received = output.getvalue()
         for line in filter(lambda a: a != '', received.split('\n')):
             splitline = line.strip().split(' ')

@@ -4,7 +4,7 @@ class FizzBuzzObject(object):
     
     def __init__(self):
         self.d = {3: 'Fizz', 5: 'Buzz'}
-        self.s = lambda a: a[1]
+        self.s = lambda a: a[0]
         self.i = 1
     
     def __call__(self, n: int = 15):
@@ -15,12 +15,12 @@ class FizzBuzzObject(object):
         self.i = temp
     
     def __next__(self):
-        outline = f'{self.i}'
+        outline = f'{self.i} '
         for num, word in sorted(self.d.items(), key=self.s):
             if num == 0:
                 continue
             if self.i % num == 0:
-                outline += ' ' + word
+                outline += word
         self.i += 1
         return outline
 
