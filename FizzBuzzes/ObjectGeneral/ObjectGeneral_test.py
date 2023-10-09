@@ -12,7 +12,7 @@ class GeneralFizzBuzzObjectTest(unittest.TestCase):
         with redirect_stdout(output):
             FizzBuzzObjectGeneral(
                 d={3: 'Fizz', 5: 'Buzz'},
-                s=lambda a: a[0]
+                s=lambda a: a[1]
             )
         received = output.getvalue()
         for line in filter(lambda a: a != '', received.split('\n')):
@@ -35,7 +35,7 @@ class GeneralFizzBuzzObjectTest(unittest.TestCase):
         with redirect_stdout(output):
             FizzBuzzObjectGeneral(
                 d={6: 'Blarg', 7: 'Honk'},
-                s=lambda a: a[0]
+                s=lambda a: a[1]
             )
         received = output.getvalue()
         for line in filter(lambda a: a != '', received.split('\n')):

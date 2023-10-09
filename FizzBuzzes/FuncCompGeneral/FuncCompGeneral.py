@@ -3,7 +3,7 @@
 def general_func_comp_fizz_buzz(
     n: int = 15,
     d: dict[int, str] = {3: 'Fizz', 5: 'Buzz'}, 
-    sortkey: callable = lambda a: a[0],
+    sortkey: callable = lambda a: a[1],
     formatstr: str = "{a} {b}"
 ):
     def fizz_words(n: int, ):
